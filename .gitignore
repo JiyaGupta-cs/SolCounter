@@ -1,33 +1,58 @@
-.anchor
+# Ignore .DS_Store files
 .DS_Store
-target
-**/*.rs.bk
-node_modules
-test-ledger
-.yarn
 
-# Logs
-logs
-**/*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Ignore Node.js modules and build output
+node_modules/
+dist/
+.next/
+out/
+coverage/
+*.log
 
-# Build output
-node_modules
-dist
-dist-ssr
-*.local
+# Ignore Solana build artifacts and target directory
+target/
+**/target/
+*.so
+*.dylib
+*.o
 
-# Editor directories and files
+# Ignore test artifacts
+test-ledger/
+coverage/
+test-results/
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE/editor settings
 .vscode/
-!.vscode/extensions.json
-.idea
-.DS_Store
-**/*.suo
-**/*.ntvs*
-**/*.njsproj
-**/*.sln
-**/*.sw?
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore Yarn and NPM related files
+.yarn/*
+.pnp.*
+.yarn-integrity
+yarn-error.log
+package-lock.json
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore build artifacts from Rust in the Solana backend
+*.rs.bk
+
+# Specific to the frontend (Next.js)
+.next/
+out/
+build/
+
+# Ignore other OS generated files
+Thumbs.db
