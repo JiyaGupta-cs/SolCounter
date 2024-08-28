@@ -56,7 +56,7 @@ function App() {
                     <WalletDisconnectButton />
                     { /* Your app's components go here, nested within the context providers. */ }
                     <CounterState/>
-                    {/* <IncrementButton/> */}
+                    <IncrementButton/> 
                 </WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>
