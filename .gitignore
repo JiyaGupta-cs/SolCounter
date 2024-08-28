@@ -56,3 +56,7 @@ build/
 
 # Ignore other OS generated files
 Thumbs.db
+
+
+test-ledger/rocksdb/
+test-ledger/*.log
